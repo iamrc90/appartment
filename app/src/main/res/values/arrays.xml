@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ticket_actions">
+        <item>Resolved</item>
+        <item>Not Resolved</item>
+    </string-array>
+</resources>
