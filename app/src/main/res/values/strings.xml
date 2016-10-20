@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">OSOS</string>
+    <string name="retry">Retry</string>
+    <string name="close">Close</string>
+    <string name="internet_connection_alert">Sorry, no Internet connectivity found, Please reconnect and try again</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="tab_title_active_tickets">Active</string>
+    <string name="tab_title_inactive_tickets">InActive</string>
+    <string name="alert_remove_image">Delete Image</string>
+    <string name="alert_btn_yes">Yes</string>
+    <string name="alert_btn_no">No</string>
+    <string name="are_you_sure_txt">Are You Sure?</string>
+    <string name="submit_data_loader_txt">Please wait...</string>
+    <string name="submit_btn_text">Submit</string>
+    <string name="upload_success">Success</string>
+    <string name="upload_success_msg">uploaded successfully</string>
+    <string name="alert_btn_ok">ok</string>
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.appartment.ui.ComplaintDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            />
+        <LinearLayout
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/card_item_radius">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ticketLbl"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:text="Ticket ID"
+                            android:padding="4dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ticketNumber"
+                            android:textSize="17sp"
+                            android:text="BH1_F10_0045"
+                            android:background="@color/purple"
+                            android:padding="4dp"
+                            android:layout_marginLeft="14dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@id/ticketLbl"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dateLbl"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:text="Date : "
+                            android:padding="4dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ticketDate"
+                            android:textSize="17sp"
+                            android:text="25-Sep-2016"
+                            android:padding="4dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_toRightOf="@id/dateLbl"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addressLbl"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:text="Address : "
+                            android:padding="4dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/address"
+                            android:textSize="17sp"
+                            android:text="BXXX Building - Floor 10"
+                            android:padding="4dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_toRightOf="@id/addressLbl"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/priorityLbl"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:text="Priority : "
+                            android:padding="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/priority"
+                            android:textSize="17sp"
+                            android:text="Normal"
+                            android:background="@color/ice_blue"
+                            android:padding="5dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/priorityLbl"/>
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/descriptionLbl"
+                            android:textSize="17sp"
+                            android:text="Issue Details"
+                            android:textStyle="bold"
+                            android:padding="4dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/summary"
+                            android:textSize="20sp"
+                            android:minLines="2"
+                            android:ellipsize="end"
+                            android:text="this is the description about the complaint raised by the apparment resident.Please fix my fan ASAP."
+                            android:padding="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_below="@id/descriptionLbl"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:elevation="3dp"
+                card_view:cardCornerRadius="@dimen/card_item_radius">
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp">
+                        <EditText android:id="@+id/input_commment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textMultiLine"
+                            android:hint="Comments"
+                            android:paddingBottom="14dp"/>
+                </android.support.design.widget.TextInputLayout>
+            </android.support.v7.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:scrollbars="none"
+                android:id="@+id/imageScroller"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageList"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="status"-->
+                <!--android:textColorHint="#05ab9a"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:padding="2dp"-->
+                <!--android:id="@+id/status_spinner">-->
+            <!--</android.support.v7.widget.AppCompatSpinner>-->
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnResolved"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="@string/submit_btn_text"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/card_margin"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
