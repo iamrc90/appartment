@@ -22,7 +22,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.appartment.R;
-import com.appartment.adaptor.TicketAdaptor;
+import com.appartment.adapter.TicketAdapter;
 import com.appartment.app.AppConfig;
 import com.appartment.app.AppController;
 import com.appartment.helpers.EndlessRecyclerViewScrollListener;
@@ -40,7 +40,7 @@ public class ComplaintsActivity extends AppCompatActivity {
 
     private final String TAG = ComplaintsActivity.class.getSimpleName();
     private RecyclerView recyclerView;
-    private TicketAdaptor adapter;
+    private TicketAdapter adapter;
     private List<Ticket> ticketList;
     private ProgressBar progressBar;
     private ProgressDialog progressDialog;
@@ -64,7 +64,7 @@ public class ComplaintsActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.complaintListView);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         ticketList = new ArrayList<>();
-        adapter = new TicketAdaptor(this, ticketList);
+        adapter = new TicketAdapter(this, ticketList);
 
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(this, 1);
         recyclerView.setLayoutManager(mLayoutManager);

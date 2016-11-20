@@ -15,4 +15,10 @@
     <string name="upload_success">Success</string>
     <string name="upload_success_msg">uploaded successfully</string>
     <string name="alert_btn_ok">ok</string>
+
+    <!--title-->
+    <string name="title_active_tickets">Active Tickets Results</string>
+    <string name="title_in_active_tickets">InActive Tickets Results</string>
+    <string name="title_filter_active_tickets">Filter Active Tickets </string>
+    <string name="title_filter_in_active_tickets">Filter InActive Tickets</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.appartment.ui;
 
-import android.app.ListActivity;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -11,18 +10,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.appartment.R;
-import com.appartment.adaptor.ViewPagerAdaptor;
+import com.appartment.adapter.ViewPagerAdapter;
 import com.appartment.helpers.SessionManager;
 import com.appartment.helpers.Utils;
-
-import java.util.List;
+import com.appartment.ui.fragments.ActiveTicketsFragment;
+import com.appartment.ui.fragments.InactiveTicketsFragment;
 
 public class ListTickets extends AppCompatActivity {
     private final String TAG = ListTickets.class.getSimpleName();
     private Toolbar toolBar;
     private ViewPager viewPager;
     private TabLayout tabLayout;
-    private ViewPagerAdaptor viewPagerAdaptor;
+    private ViewPagerAdapter viewPagerAdapter;
     private SessionManager session;
 
     @Override
@@ -36,10 +35,10 @@ public class ListTickets extends AppCompatActivity {
         setSupportActionBar(toolBar);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        viewPagerAdaptor = new ViewPagerAdaptor(getSupportFragmentManager());
-        viewPagerAdaptor.addFragments(new ActiveTicketsFragment(),getResources().getString(R.string.tab_title_active_tickets));
-        viewPagerAdaptor.addFragments(new InactiveTicketsFragment(),getResources().getString(R.string.tab_title_inactive_tickets));
-        viewPager.setAdapter(viewPagerAdaptor);
+        viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+        viewPagerAdapter.addFragments(new ActiveTicketsFragment(),getResources().getString(R.string.tab_title_active_tickets));
+        viewPagerAdapter.addFragments(new InactiveTicketsFragment(),getResources().getString(R.string.tab_title_inactive_tickets));
+        viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
     }
 

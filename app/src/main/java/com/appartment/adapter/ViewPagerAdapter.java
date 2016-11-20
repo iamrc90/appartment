@@ -1,4 +1,4 @@
-package com.appartment.adaptor;
+package com.appartment.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,12 +9,12 @@ import java.util.ArrayList;
 /**
  * Created by ripulchhabra on 12/10/16.
  */
-public class ViewPagerAdaptor extends FragmentPagerAdapter {
+public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     ArrayList<Fragment> fragments = new ArrayList<>();
     ArrayList<String> tabTitles = new ArrayList<>();
 
-    public ViewPagerAdaptor(FragmentManager fm) {
+    public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 

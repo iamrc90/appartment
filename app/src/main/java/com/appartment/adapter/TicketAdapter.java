@@ -1,4 +1,4 @@
-package com.appartment.adaptor;
+package com.appartment.adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,14 +13,14 @@ import com.appartment.model.Ticket;
 
 import java.util.List;
 
-public class TicketAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class TicketAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private Context mContext;
     private List<Ticket> ticketList;
     private final int VIEW_ITEM = 1;
     private final int VIEW_PROG = 0;
 
-    public TicketAdaptor(Context mContext, List<Ticket> ticketList) {
+    public TicketAdapter(Context mContext, List<Ticket> ticketList) {
         this.mContext = mContext;
         this.ticketList = ticketList;
     }
