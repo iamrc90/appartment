@@ -2,102 +2,112 @@
 <items version="2" >
 
     <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.4.0_72f5b08b8d39f943de4903a1e5652b4eee0a9bc3/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_9553762d62281973146c5bad7cf3dc402c0891cf/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_5474ed8b0753768e3554523893d7f6c229bc490f/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_8ac1efaab4cf23f7788ace69ef196942e1487760/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_82d07c6129f13b45bf5d684cd71452366dae0600/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_76f55eb95b4f42861c47c95f7635a9ea1a058c4d/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.4.0_2628e4a2ef8f95c9f995efab35e6c6a542b3e29e/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_44803d10619043a33c1bcd83f19e52e332db522a/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.mcxiaoke.volley-library-aar-1.0.0_b4efa59af41fcf730684e674e54cb4c217c829ec/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.4.1_18b2dfa12adbf4364d32647ece5b9be06bfae85e/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.4.0_b34f96d31516078d5956110219b5da4de356a684/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c9fc7a7c61f2456452b1e9e84de781f7e6004eed">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_351d8bb1e341bdeff714c30526464eb26739e1a7/classes.dex" />
-    </item>
-    <item
-        jar="/Users/ripulchhabra/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
         revision="23.0.3"
         sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.9.0_917e73df9436848fcaf5218da61b20a963196a68/classes.dex" />
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\okio-1.9.0_4ff406b66c4221dc88ae11d1780b0d7a4988c0f8.jar" />
     </item>
     <item
-        jar="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
         revision="23.0.3"
-        sha1="fce82c597b0b6234d78bbf6cd1aa54e12c348f74">
-        <dex dex="/Users/ripulchhabra/Downloads/Appartment/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_81d6477ab05e5ebbc9dc842372a3158da81cbb0f/classes.dex" />
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_0509ee9be863fd10c5b2cea636a5a9da22133798.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_e852d541e7f60124b6154971019e172fb4ec221a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_96ec0ef1c8261519e10ca34719aad36ad49e2cad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.mcxiaoke.volley-library-aar-1.0.0_915fd1f5dbd6410db8dc23e09f02cfb1585a6f2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Entertainment\EclipseSDK\ADT\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_95cd28b005d01c06f1187492c3aad24543d48662.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_22ff394bf086ea6b7da89ecdcab860d58c10caa6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_d612eb3eeb7a5a46fced08cbdeaaf020b0957b40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_56421c2212c3c9c937904ec1e2d2d929bd9a3a33.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_bf563ce0ffdce7849e0c98d47cdb83c1b86e6df6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Sumit\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_39666afbba26ce25caea46ef803e2b1574d6e03d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\D-Drive\Apps Details\apartment\appartment\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_eb72534f9825dea17b32dd3855c3c02736e76b17.jar" />
     </item>
 
 </items>
