@@ -10,6 +10,8 @@ public class FilterItem {
 
     String headerName, name, id ;
 
+    boolean isSelected;
+
     TicketType ticketType;
 
     public String getHeaderName() {
@@ -34,6 +36,14 @@ public class FilterItem {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 
     public TicketType getTicketType() {

@@ -17,6 +17,8 @@
     <string name="alert_btn_ok">ok</string>
 
     <!--title-->
+    <string name="title_results">Results</string>
+    <string name="title_filter">Filter</string>
     <string name="title_active_tickets">Active Tickets Results</string>
     <string name="title_in_active_tickets">InActive Tickets Results</string>
     <string name="title_filter_active_tickets">Filter Active Tickets </string>

@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.appartment.R;
@@ -27,7 +28,7 @@ public class FilterAdapter extends RecyclerView.Adapter<FilterAdapter.SettingsVi
     private Context context;
     private ArrayList<Filter> bambooSettingsList;
 
-    public FilterAdapter(Activity mActivity, Context context,  ArrayList<Filter> bambooSettingsList) {
+    public FilterAdapter(Activity mActivity, Context context, ArrayList<Filter> bambooSettingsList) {
 
         this.context = context;
         this.activity = mActivity;
@@ -82,9 +83,26 @@ public class FilterAdapter extends RecyclerView.Adapter<FilterAdapter.SettingsVi
 
     }
 
-    private void setSettingsItem(SettingsViewHolder holder, FilterItem settingsItem, int position) {
+    private void setSettingsItem(final SettingsViewHolder holder, FilterItem settingsItem, final int position) {
 
         holder.txtSettingsTitle.setText(settingsItem.getName());
+
+        holder.checkBoxFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                myClickListener.onItemClick(position, v);
+            }
+        });
+
+        holder.layoutSettingItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                holder.checkBoxFilter.setChecked(!holder.checkBoxFilter.isChecked());
+
+                myClickListener.onItemClick(position, v);
+            }
+        });
     }
 
     private void setSettingsHeaderItem(SettingsViewHolder holder, FilterHeader settingsHeader) {
@@ -124,6 +142,7 @@ public class FilterAdapter extends RecyclerView.Adapter<FilterAdapter.SettingsVi
 
         TextView txtSettingsHeaderTitle, txtSettingsTitle;
         CheckBox checkBoxFilter;
+        LinearLayout layoutSettingItem;
 
         SettingsViewHolder(View itemView, int viewType) {
             super(itemView);
@@ -133,6 +152,7 @@ public class FilterAdapter extends RecyclerView.Adapter<FilterAdapter.SettingsVi
                     break;
 
                 default:
+                    layoutSettingItem = (LinearLayout) itemView.findViewById(R.id.filter_item);
                     txtSettingsTitle = (TextView) itemView.findViewById(R.id.settings_row_txt_alert);
                     checkBoxFilter = (CheckBox) itemView.findViewById(R.id.filter_check_box);
                     break;

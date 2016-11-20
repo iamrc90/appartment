@@ -7,7 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.appartment.R;
 import com.appartment.adapter.FilterAdapter;
@@ -18,11 +21,12 @@ import com.appartment.model.enums.TicketType;
 
 import java.util.ArrayList;
 
-public class FilterActivity extends AppCompatActivity {
+public class FilterActivity extends AppCompatActivity implements FilterAdapter.MyClickListener {
 
     public static final String TYPE = "type";
     private Bundle bundle;
     private String type;
+    private FilterAdapter bambooSettingAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +38,118 @@ public class FilterActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.filter_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_done) {
+
+            doFilter();
+
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void doFilter() {
+
+        if (checkFilterSelected()) {
+
+            String priority = getPriority();
+            String staus = getStatus();
+
+            Bundle bundle = new Bundle();
+            bundle.putString(TicketsResultActivity.TYPE, type);
+            bundle.putString(TicketsResultActivity.PRIORITY, priority);
+            bundle.putString(TicketsResultActivity.STATUS, staus);
+            TicketsResultActivity.start(FilterActivity.this, bundle);
+
+        } else
+            Toast.makeText(FilterActivity.this, "Please select any one option", Toast.LENGTH_LONG).show();
+
+
+    }
+
+    private String getStatus() {
+        String SEPARATOR = ",";
+        StringBuilder status = new StringBuilder();
+
+        for (int i = 0; i < bambooSettingAdapter.getAll().size(); i++) {
+            if (bambooSettingAdapter.getItem(i).objItem instanceof FilterItem) {
+                FilterItem filterItem = (FilterItem) bambooSettingAdapter.getItem(i).objItem;
+                if (filterItem.getHeaderName().equals("Status") && filterItem.isSelected()) {
+                    status.append(filterItem.getId());
+                    status.append(SEPARATOR);
+                }
+            }
+        }
+
+        String csv = status.toString();
+        //Remove last comma
+        if (csv.length() > 0)
+            csv = csv.substring(0, csv.length() - SEPARATOR.length());
+
+        return csv;
+    }
+
+    private String getPriority() {
+
+        String SEPARATOR = ",";
+        StringBuilder priority = new StringBuilder();
+
+        for (int i = 0; i < bambooSettingAdapter.getAll().size(); i++) {
+            if (bambooSettingAdapter.getItem(i).objItem instanceof FilterItem) {
+                FilterItem filterItem = (FilterItem) bambooSettingAdapter.getItem(i).objItem;
+                if (filterItem.getHeaderName().equals("Priority") && filterItem.isSelected()) {
+                    priority.append(filterItem.getId());
+                    priority.append(SEPARATOR);
+                }
+            }
+        }
+
+        String csv = priority.toString();
+        //Remove last comma
+        if (csv.length() > 0)
+            csv = csv.substring(0, csv.length() - SEPARATOR.length());
+
+        return csv;
+    }
+
+    private boolean checkFilterSelected() {
+
+        for (int i = 0; i < bambooSettingAdapter.getAll().size(); i++) {
+            if (bambooSettingAdapter.getItem(i).objItem instanceof FilterItem)
+                if (((FilterItem) bambooSettingAdapter.getItem(i).objItem).isSelected())
+                    return true;
+
+        }
+        return false;
+    }
+
     private void initViews() {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         type = bundle.getString(TicketsResultActivity.TYPE);
 
-        if (type.equals("active"))
-            toolbar.setTitle(R.string.title_filter_active_tickets);
-        else
-            toolbar.setTitle(R.string.title_filter_in_active_tickets);
+//        if (type.equals("active"))
+//            toolbar.setTitle(R.string.title_filter_active_tickets);
+//        else
+//            toolbar.setTitle(R.string.title_filter_in_active_tickets);
+
+        toolbar.setTitle(R.string.title_filter);
 
         setSupportActionBar(toolbar);
 
@@ -61,8 +167,9 @@ public class FilterActivity extends AppCompatActivity {
         RecyclerView recyclerViewSettings = (RecyclerView) findViewById(R.id.filter_recycler_view);
         recyclerViewSettings.setLayoutManager(new LinearLayoutManager(FilterActivity.this));
 
-        FilterAdapter bambooSettingAdapter = new FilterAdapter(FilterActivity.this, this ,new ArrayList<Filter>());
+        bambooSettingAdapter = new FilterAdapter(FilterActivity.this, this, new ArrayList<Filter>());
         recyclerViewSettings.setAdapter(bambooSettingAdapter);
+        bambooSettingAdapter.setOnItemClickListener(this);
 
         // now get settings here
         bambooSettingAdapter.addAll(getFilter(getFilterItems()));
@@ -186,5 +293,13 @@ public class FilterActivity extends AppCompatActivity {
         }
 
         return filterItemArrayList;
+    }
+
+    @Override
+    public void onItemClick(int position, View v) {
+
+        if (bambooSettingAdapter.getItem(position).objItem instanceof FilterItem)
+            ((FilterItem) bambooSettingAdapter.getItem(position).objItem).setSelected(!((FilterItem) bambooSettingAdapter.getItem(position).objItem).isSelected());
+
     }
 }

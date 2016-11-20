@@ -197,7 +197,6 @@ public class InactiveTicketsFragment extends Fragment {
     private void prepareData() {
         String tag_string_req = "ticket_request";
 
-
         String apiUrl = AppConfig.URL_TICKETS;
 
         final String userId = Integer.toString(session.getUserId());
